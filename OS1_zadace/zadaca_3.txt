@@ -1,0 +1,6 @@
+mkdir vjezba3 && mkdir vjezba3/backup
+touch vjezba3/{notes.txt,todo.txt,script.sh}
+cp vjezba3/* vjezba3/backup
+rm vjezba3/script.sh && ls vjezba3
+mkdir vjezba3/backup/$USER
+mv vjezba3/backup/* vjezba3/backup/$USER

@@ -1,0 +1,1 @@
+Ovaj repozitorij napravljen je u sklopu vježbi iz kolegija Operacijski sustavi.
