@@ -1,0 +1,32 @@
+-1-
+pwd
+ls
+mkdir vjezba1 && cd vjezba1
+touch README.md
+cd ..
+
+-2-
+mkdir vjezba2 && cd vjezba2 && touch file.txt
+cp file.txt file_copy.txt
+ls
+rm file.txt && cd ..
+rmdir vjezba2
+
+Direktorij 'vjezba2' ne možemo obrisati iz razloga jer nije prazan.
+
+-3-
+mkdir vjezba3 && mkdir vjezba3/backup
+touch vjezba3/{notes.txt,todo.txt,script.sh}
+cp vjezba3/* vjezba3/backup
+rm vjezba3/script.sh && ls vjezba3
+mkdir vjezba3/backup/$USER
+mv vjezba3/backup/* vjezba3/backup/$USER
+
+-4-
+mkdir vjezba4 && mkdir vjezba4/subfolder
+touch vjezba4/$HOSTNAME
+mv vjezba4/$HOSTNAME vjezba4/$USER
+mv vjezba4/$USER vjezba4/subfolder
+rm /mnt/c/Users/Mikel/Desktop/Github/OS-Vjezbe/OS1_zadace/vjezba4/subfolder/$USER
+
+Direktorij 'vjezba4' nije vidljiv na Github-u iz razloga jer ne sadrži nikakve datoteke.
