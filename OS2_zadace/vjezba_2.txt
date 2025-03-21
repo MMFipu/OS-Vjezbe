@@ -1,0 +1,18 @@
+-1-
+mkdir vjezba_2 | mkdir vjezba_2/{data,backup}
+touch vjezba_2/data/{script.js,style.css,.env}
+echo 'console.log("Hello, World!")' > vjezba_2/data/script.js && echo "body { background-color: #f0f0f0; }" > vjezba_2/data/style.css && echo "VJEBE=OS" > vjezba_2/data/.env
+
+-2-
+cp -rv vjezba_2/data/. vjezba_2/backup/
+cd vjezba_2/data/ && ls -laS ../backup/
+
+-3-
+rm -rv *
+mkdir -p ../data && cp -nv ../backup/* ./
+ls -lAt -1
+
+-4-
+ls -laS
+ls -lSh
+ls -Rat --color
