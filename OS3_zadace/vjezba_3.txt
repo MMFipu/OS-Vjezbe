@@ -1,0 +1,2 @@
+mkdir screenshots
+touch {OS3.md,OS3.pdf,screenshots/{bash.png,nano.png,vim.png}}
