@@ -1,0 +1,17 @@
+PID: 13025			- jedinstveni identifikator procesa
+USER: mikel.milohanic		- pokreće ga korisnik mikel.milohanic
+PRI: 20				- radi se o normalnom procesu
+NI: 0				- proces ima normalni prioritet
+VIRT: 17968			- ukupno virtualne memorije koju proces koristi iznosi 17968 KiB (~17.5 MiB)
+RES: 10240			- udio fizičke memorije koju proces koristi iznosi 10240 KiB (~10 MiB)
+SHR: 6528			- veći dio fizičke memorije dodijeljen je drugim procesima, a iznosi 6528 KiB (~6.4 MiB)
+S: S				- trenutno stanje procesa je 'sleep' tj. proces spava
+CPU%: 0.0			- proces ne koristi CPU
+MEM%: 0.5			- proces koristi 0.5% fizičke memorije
+TIME+: 0:00.01  		- proces je koristio jednu stotinku od pokretanja
+COMMAND: python3 hello.py	- naziv i argumenti naredbe koja je pokrenula proces, a to je 'python3 hello.py'
+
+3 načina za prekid procesa naredbom kill:
+- kill 13025 (default, zastavica 15)
+- kill -9 13025 (prisilno)
+- kill -2 13025 (slično kao CTRL+C)
